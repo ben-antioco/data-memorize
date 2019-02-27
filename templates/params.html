@@ -1,0 +1,84 @@
+<div data-page="params" id="app_main" class="app-main">
+
+    <div><h2>Params</h2></div>
+
+    <div class="params-title">USER</div>
+    <div class="params-item">
+        <label for="params_remember">Remember me</label>
+        <input type="checkbox" id="params_remember" name="params_remember">
+    </div>
+
+    <br />
+
+    <div class="params-title">ENCRYPTION</div>
+    <div class="params-item">
+        <label for="params_encryption">Enter key for encryption <small>(8 print minimum)</small></label>
+        <input type="password" id="params_encryption" name="params_encryption" placeholder="Ex: AerT5u05OPN765dfr4">
+        <i class="fa fa-eye-slash key_encription_show" aria-hidden="true"></i>
+        <i class="fa fa-eye key_encription_hide" aria-hidden="true" style="display:none;"></i>
+        <div id="params_encryption_result"></div>
+        <button id="send_params_encryption">ADD KEY</button>
+
+        <br /><br />
+
+        <div id="params_encrypt_data_state" style="display:none">
+            <label for="encrypt_data">Encrypt data</label>
+            <input type="checkbox" id="encrypt_data" name="encrypt_data">
+            <div id="encrypt_data_result"></div>
+        </div>
+
+    </div>
+
+    <br />
+
+    <div class="params-title">ENABLE SYNCHRONISATION</div>
+    <div class="params-item">
+        <label for="http_server">Open API for sync data</label>
+        <input type="checkbox" id="http_server" name="http_server">
+    </div>
+    <div class="params-item">Be carrefull, identical encryption key is required, on all computer !</div>
+
+    <div id="open_browser_localhost" class="params-item" style="display:none">
+
+        <div>
+            <div>Server running... Share <a id="a_link_share_sync" href="#">this</a> link for sync :</div>
+            <div id="load_link_for_sync" class="param-link-for-sync"></div>
+        </div>
+
+    </div>
+
+    <br />
+
+    <div class="params-title">SYNCHRONISATION</div>
+    <div id="params_block_sync" class="params-item">
+        <label for="api_for_synchronize">Enter link for synchronize</label>
+        <input type="text" id="api_for_synchronize" name="api_for_synchronize" placeholder="Ex: http://192.168.1.89:3000/Enn3fUMOhMxQDkTLKXvNR3rlyTNWKTxQm3Yycn1UAXqz2GyBIH">
+        <button id="get_api_for_synchronize">SYNC</button>
+        <div id="get_api_for_synchronize_result"></div>
+    </div>
+
+    <br />
+
+    <div class="params-title">EXPORT</div>
+    <div class="params-item">
+        <label for="export_database">Export database to json format</label>
+        <input type="checkbox" id="export_database" name="export_database">
+    </div>
+    <div id="result_export_database" class="params-item" style="display:none">
+        <!--<div><a href="data:text/json;charset=utf-8,/data/datas.json" target="_blank">datas.json</a></div>-->
+    </div>
+
+    <div id="result_export_database_file" class="params-item" style="display:none">
+        <!--<div><a href="data:text/json;charset=utf-8,/data/datas.json" target="_blank">datas.json</a></div>-->
+    </div>
+
+
+
+    <div class="params-title">IMPORT</div>
+    <div class="params-item">
+        <label for="import_database">Import data <small>(json format)</small></label>
+        <input type="file" id="import_database" name="import_database">
+    </div>
+    <div id="result_import_database" class="params-item" style="display:none"></div>
+
+</div>

@@ -1,0 +1,72 @@
+let tray_js = function(){
+
+    /*
+
+    var tray = new nw.Tray({
+        title: '',
+        icon: 'assets/icon/16/lock.png',
+        tooltip: true
+    });
+
+    // Give it a menu
+    var menu = new nw.Menu();
+
+    menu.append(new nw.MenuItem({
+        type: 'normal',
+        label: 'Add',
+        icon: 'assets/icon/16/lock.png',
+        click: function(){
+
+            add_data()
+
+        }
+    }));
+
+    menu.append(new nw.MenuItem({
+        type: 'normal',
+        label: 'View',
+        icon: 'assets/icon/16/lock.png',
+        click: function(){
+
+            view_data()
+
+            console.log( win )
+
+        }
+    }));
+
+    tray.menu = menu;
+
+
+    jQuery( function( $ ){
+
+        //Load add data
+        window.add_data = function(){
+
+            $.post('/templates/add.html', function( data ){
+                $('#template_load').html( data );
+                add_navigation();
+            })
+
+        }
+
+        //Load view data
+        window.view_data = function(){
+
+            $.post('/templates/view.html', function( data ){
+                $('#template_load').html( data );
+                add_navigation();
+            })
+
+        }
+
+        function add_navigation(){
+            $.post('/templates/nav.html', function( data ){
+                $('#template_load').prepend( data );
+            });
+        }
+    })
+
+    */
+}
+export default tray_js

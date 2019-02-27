@@ -1,0 +1,25 @@
+<div data-page="edit_data" id="app_main" class="app-main">
+    <div><h2>Edit data</h2></div>
+
+    <form id="form_edit_data">
+
+        <div>Title</div>
+        <div class="content-inp"><input type="text" name="edit_title" placeholder="required"></div>
+
+        <div>Text</div>
+        <div class="content-inp"><textarea name="edit_description" id="edit_description" placeholder="required"></textarea></div>
+
+        <div>Image</div>
+        <div><small>image type png or jpg</small></div>
+        <div class="content-inp"><label for="edit_img">Add img</label></div>
+        <div id="add_img_loaded" class="add-img-loaded"></div>
+        <div class="content-inp"><input type="file" id="edit_img" name="edit_img"></div>
+
+        <input type="hidden" name="row_id" value="">
+        <input type="hidden" name="encrypt_state" value="">
+
+        <div class="content-inp"><button type="submit">send</button></div>
+
+    </form>
+
+</div>

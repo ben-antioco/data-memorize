@@ -1,0 +1,4 @@
+/data/*.json
+/node_modules/
+/upload/
+!upload/default.png
